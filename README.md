@@ -1,10 +1,8 @@
 # ✈️ Flight Price Prediction System with Machine Learning
 
-[![Application Status](https://img.shields.io/website?url=https%3A%2F%2Fflight-price-predictor-m5k2.onrender.com%2F)](https://flight-price-predictor-m5k2.onrender.com/)
 
 This project is a web-based application designed to predict flight prices based on user-provided travel details. By utilizing a machine learning model trained on historical flight data, this system empowers users to make cost-effective booking decisions by providing estimated prices for flights.
 
-🌐 **Project Link**: [Flight Price Predictor](https://flight-price-predictor-m5k2.onrender.com/)
 
 ---
 
