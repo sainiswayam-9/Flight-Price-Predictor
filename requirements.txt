@@ -1,0 +1,8 @@
+pandas
+scikit-learn
+feature-engine
+flask
+xgboost
+gunicorn
+numpy
+pickle-mixin
