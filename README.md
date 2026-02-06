@@ -98,8 +98,9 @@ The user-facing application is built with the **Flask** framework, making it eas
   - git clone https://github.com/sainiswayam-9/Flight-Price-Predictor.git
   - cd Flight-Price-Predictor
 - **2️⃣ Create Virtual Environment**
-  - Windows (PowerShell): python -m venv venv
-  -                       .\venv\Scripts\activate
+  - Windows (PowerShell): 
+    - python -m venv venv
+    - .\venv\Scripts\activate
 - **3️⃣ Install Dependencies**
   - pip install -r requirements.txt
 - **4️⃣ Run the Application**
