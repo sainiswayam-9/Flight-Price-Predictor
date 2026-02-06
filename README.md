@@ -89,3 +89,47 @@ The user-facing application is built with the **Flask** framework, making it eas
 - **Data Processing**: Pandas, NumPy
 - **Visualization**: Matplotlib 📊, Seaborn 📉
 - **Deployment**: Render 🛠️
+
+---
+
+## 💻 How To Run Locally
+
+- **1️⃣ Clone the Repository**
+  - git clone https://github.com/sainiswayam-9/Flight-Price-Predictor.git
+  - cd Flight-Price-Predictor
+- **2️⃣ Create Virtual Environment**
+  - Windows (PowerShell): python -m venv venv
+  -                       .\venv\Scripts\activate
+- **3️⃣ Install Dependencies**
+  - pip install -r requirements.txt
+- **4️⃣ Run the Application**
+  - python app.py
+- **5️⃣ Open in Browser**
+  - Go to : http://127.0.0.1:5000
+
+---
+
+## 🌍 Deployment on Render
+
+- **1️⃣ Push code to GitHub**
+- **2️⃣ Go to Render → New → Web Service**
+- **3️⃣ Use these settings** -
+  - Environment : Python
+  - Build Command : pip install -r requirements.txt
+  - Start Command : gunicorn app:app
+
+---
+
+## 📌 Future Improvements
+
+- **Add input validation**
+- **Improve UI with Bootstrap**
+- **Add logging system**
+- **Add model performance metrics in UI**
+
+---
+
+## 👨‍💻 Author
+
+- **Swayam Saini**
+- **Gmail : sainiswayam7@gmail.com**

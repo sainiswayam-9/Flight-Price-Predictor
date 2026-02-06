@@ -1,5 +1,5 @@
+scikit-learn==1.5.1
 pandas
-scikit-learn
 feature-engine
 flask
 xgboost

@@ -1,6 +1,13 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import pickle
+import sklearn.compose._column_transformer as _column_transformer
+
+# Compatibility shim for models pickled with older scikit-learn versions
+if not hasattr(_column_transformer, '_RemainderColsList'):
+    class _RemainderColsList:
+        pass
+    _column_transformer._RemainderColsList = _RemainderColsList
 
 saved_model = pickle.load(open('model.pkl', 'rb'))
 
@@ -42,7 +49,9 @@ def predict():
             return render_template('predict.html', pred=message)
 
         except Exception as e:
-            return render_template('predict.html', pred="An error occurred during prediction.")
+            import traceback
+            traceback.print_exc()
+            return render_template('predict.html', pred=f"Error: {e}")
 
     return render_template('predict.html', pred="")
 
