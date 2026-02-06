@@ -6,3 +6,5 @@ xgboost
 gunicorn
 numpy
 pickle-mixin
+matplotlib
+seaborn
