@@ -45,13 +45,15 @@ def predict():
             }
             x_new = pd.DataFrame(x)
             prediction = saved_model.predict(x_new)[0]
-            message = f"Predicted Price : {prediction:,.0f} INR"
+            # Return only the predicted price (concise)
+            message = f"INR {prediction:,.0f}"
             return render_template('predict.html', pred=message)
 
-        except Exception as e:
+        except Exception:
+            # Log traceback to console and show a friendly message to the user
             import traceback
             traceback.print_exc()
-            return render_template('predict.html', pred=f"Error: {e}")
+            return render_template('predict.html', pred="We're sorry — we couldn't generate a prediction right now. Please try again later.")
 
     return render_template('predict.html', pred="")
 
